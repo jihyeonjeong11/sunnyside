@@ -116,7 +116,7 @@ export const HeaderMenus = styled.ul<HeaderMenuProps>`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: calc(100% - 3rem);
+    width: calc(100% - 6rem);
     min-height: 350px;
     gap: 3rem;
     top: 5rem;
@@ -139,7 +139,7 @@ export const HeaderMenus = styled.ul<HeaderMenuProps>`
       border-color: transparent transparent white transparent;
       border-style: solid;
       top: -0.5rem;
-      right: -0.95rem;
+      right: -1.5rem;
       position: absolute;
       transform: translateY(-100%);
     }
