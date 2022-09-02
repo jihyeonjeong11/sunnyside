@@ -6,7 +6,7 @@ import {
 } from "../styles/layout";
 
 
-const FourCols = ({  }) => {
+const FourCols : React.FC = ({  }) : React.ReactElement => {
   return (
     <section>
       <Grid count="2" lgcount="4">

@@ -6,7 +6,7 @@ import FourCols from "components/FourCols";
 import Footer from "components/Footer";
 import Header from "components/Header";
 
-const Index = () => {
+const Index: React.FC = () => {
   return (
     <main>
          <Container as="main">

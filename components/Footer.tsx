@@ -10,7 +10,7 @@ import {
 
 import Link from 'next/link';
 
-const Footer = ({  }) => {
+const Footer: React.FC = ({  }) : React.ReactElement => {
   return (
     <footer>
       <Background background="rgb(161, 222, 208)">

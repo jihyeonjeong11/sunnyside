@@ -1,28 +1,27 @@
-import React from 'react';
+import React from "react";
 
-import {
-  NextImg,
-  Flex,
-  Container,
-  Relative,
-  TextCard,
-} from "../styles/layout";
-import {
-  CardTitleText,
-  CardContentText
-} from "../styles/custom";
+import { NextImg, Flex, Container, Relative, TextCard } from "../styles/layout";
+import { CardTitleText, CardContentText } from "../styles/custom";
 
-
-const TextCardComp = ({type}: {type: boolean}) => {
-  const title = type ? "Transfrom your brands" : "Stand out to the right audience"
-  const paragraph = type ? 
-    "We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you."
-    :
-    "Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places."
+const TextCardComp: React.FC<{ type: boolean }> = ({
+  type,
+}): React.ReactElement => {
+  const title = type
+    ? "Transfrom your brands"
+    : "Stand out to the right audience";
+  const paragraph = type
+    ? "We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you."
+    : "Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.";
   return (
     <TextCard padding="3rem">
       <CardTitleText margin="0px">{title}</CardTitleText>
-      <CardContentText fontsize="1.5rem" color="hsl(213, 9%, 39%)" padding="1rem 1rem" textalign="left" fontweight="700">
+      <CardContentText
+        fontsize="1.5rem"
+        color="hsl(213, 9%, 39%)"
+        padding="1rem 1rem"
+        textalign="left"
+        fontweight="700"
+      >
         {paragraph}
       </CardContentText>
       <p style={{ marginTop: 30 }}>LEARN MORE</p>
@@ -30,7 +29,11 @@ const TextCardComp = ({type}: {type: boolean}) => {
   );
 };
 
-const ReverseColumns = ({ reverse, image, lgImage }: {reverse: boolean, image: string, lgImage: string}) => {
+const ReverseColumns: React.FC<{
+  reverse: boolean;
+  image: string;
+  lgImage: string;
+}> = ({ reverse, image, lgImage }): React.ReactElement => {
   return (
     <section>
       <Container>

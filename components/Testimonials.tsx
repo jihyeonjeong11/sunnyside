@@ -1,17 +1,19 @@
 import React from "react";
 
-import {
-  NextImg,
-  Flex,
-  Container,
-} from "../styles/layout";
-import {
-  CardTitleText,
-  CardContentText,
-} from "../styles/custom";
+import { NextImg, Flex, Container } from "../styles/layout";
+import { CardTitleText, CardContentText } from "../styles/custom";
 
-
-const ClientCard = ({ image, text, name, position }: {image: string, text: string, name: string, position: string}) => {
+const ClientCard = ({
+  image,
+  text,
+  name,
+  position,
+}: {
+  image: string;
+  text: string;
+  name: string;
+  position: string;
+}) => {
   return (
     <Flex
       gap="1.5rem"
@@ -30,11 +32,18 @@ const ClientCard = ({ image, text, name, position }: {image: string, text: strin
           imgheight="auto"
         />
       </Container>
-      <CardContentText lgfontsize="1.2rem" padding="3rem 0" color="rgb(113, 115, 130)" textalign="center" fontweight="700" lineheight="1.5" >
+      <CardContentText
+        lgfontsize="1.2rem"
+        padding="3rem 0"
+        color="rgb(113, 115, 130)"
+        textalign="center"
+        fontweight="700"
+        lineheight="1.5"
+      >
         {text}
       </CardContentText>
       <Flex gap=".5rem">
-          {" "}
+        {" "}
         <CardTitleText
           textalign="center"
           fontsize="1.1rem"
@@ -54,7 +63,7 @@ const ClientCard = ({ image, text, name, position }: {image: string, text: strin
     </Flex>
   );
 };
-const Testimonials = ({}) => {
+const Testimonials: React.FC = ({}): React.ReactElement => {
   return (
     <section>
       <Container padding="4rem 1.5rem">
