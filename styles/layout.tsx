@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Image from "next/future/image";
-import {ContainerProps, FlexProps, GridProps, BackgroundProps, AbsoluteDivProps, HeaderMenuProps, RelativeProps, TextCardProps} from 'styled-components'
+import {ContainerProps, FlexProps, GridProps, BackgroundProps, AbsoluteDivProps, HeaderMenuProps, RelativeProps, TextCardProps, NextImgProps} from 'styled-components'
 
 
 export const Container = styled.div<ContainerProps>`

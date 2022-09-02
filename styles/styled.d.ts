@@ -58,6 +58,7 @@ declare module "styled-components" {
     lgjustify?: string;
     lgalign?: string;
     lgreverse?: string;
+    textalign?: string;
   }
   
   export interface RelativeProps {
