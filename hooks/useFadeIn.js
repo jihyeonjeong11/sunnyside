@@ -1,6 +1,6 @@
 export const useFadeIn = (duration = 1, delay = 0) => {
   if (typeof duration !== "number" || typeof delay !== "number")
-    const element = useRef();
+    const element = useRef(null);
   useEffect(() => {
     if (element.current) {
       const { current } = element;

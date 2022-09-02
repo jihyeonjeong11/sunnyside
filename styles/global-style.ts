@@ -3,6 +3,7 @@ import { reset } from "styled-reset";
 import { media } from "./theme";
 
 export const GlobalStyle = createGlobalStyle`
+
     ${reset}
     :focus {
         outline: none;
@@ -51,4 +52,16 @@ export const GlobalStyle = createGlobalStyle`
             display: block;
         }
     }
+    a {
+        text-decoration: none;
+        cursor: pointer;
+      }
+    li a {
+        color: white;
+        font-size: 2rem;
+        ${media.tablet} {
+            color: black;
+        }
+    }
+
 `;

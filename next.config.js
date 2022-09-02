@@ -1,12 +1,23 @@
 const withBundleAnalyzer = require("@next/bundle-analyzer")({
   enabled: process.env.ANALYZE === "true",
+
 });
+
+
+
 
 module.exports = withBundleAnalyzer({
   target: "serverless",
   env: {
     BASE_URL: process.env.BASE_URL,
   },
+  experimental: {
+    images: {
+      allowFutureImage: true,
+    },
+  },
+  
+
 
   webpack(conf) {
     conf.module.rules.push({
@@ -34,5 +45,10 @@ module.exports = withBundleAnalyzer({
     // 절대경로
     conf.resolve.modules.push(__dirname);
     return conf;
+  },
+  experimental: {
+    images: {
+      allowFutureImage: true,
+    },
   },
 });

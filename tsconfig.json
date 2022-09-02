@@ -1,24 +1,24 @@
-{
+{  // 전체 항목은 https://www.typescriptlang.org/tsconfig
   "compilerOptions": {
-    "target": "es5",
+    "target": "es5", //es5이므로 arrow를 function으로 바꾸어줌
     "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
+      "dom", // es5 기본
+      "dom.iterable", //es5 기분
+      "esnext" //next
     ],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": false,
-    "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "baseUrl": ".",
-    "rootDir": ".",
+    "allowJs": true, // js파일을 사용할 수 있게
+    "skipLibCheck": true, // library의 타입 체크 막음
+    "strict": false, //strict 모드
+    "forceConsistentCasingInFileNames": true, // 컴포넌트 대문자 강제, 모듈 소문자
+    "noEmit": true, 
+    "esModuleInterop": true, //CommonJS/AMD/UMD 중 정함. https://d2.naver.com/helloworld/12864
+    "module": "esnext", //
+    "moduleResolution": "node", // 모듈 찾는 방식
+    "resolveJsonModule": true, // compile 시 d.ts도 생성, false라면 js만 생성
+    "isolatedModules": true, // 각 파일을 분리된 모듈로 트랜스파일한다.
+    "jsx": "preserve", //jsx 에러 나지 않음
+    "baseUrl": ".", //baseurl
+    "rootDir": ".", //root path
   },
   "include": [
     "next-env.d.ts",

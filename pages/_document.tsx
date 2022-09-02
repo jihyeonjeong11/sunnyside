@@ -55,7 +55,15 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap"
             rel="stylesheet"
           />
-        </Head>
+          <link
+            href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap"
+            rel="stylesheet"
+          />
+             </Head>
         <body>
           <Main />
           <NextScript />
